@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family:
+    "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+} 
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+
+nav {
+  height: 7%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f7;
+}
+
+ul {
+  width: 70%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  li {
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .cart{
+    position: relative;
+    right: 43px;
+    bottom: 3px;
+    padding: 0px 3px;
+    background-color: red;
+    color: #ffffff;
+    border-radius: 50%;
+  }
+}
+
+.ads-bar {
+  height: 7%;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ads-bar p {
+  font-weight: lighter;
+  font-size: 1em;
+  cursor: default;
+  a,
+  span {
+    color: #157de5;
+    cursor: pointer;
+  }
+  span {
+    position: relative;
+    top: 3px;
+  }
+  a {
+    margin-left: 4px;
+    text-decoration: none;
+  }
+  :hover {
+    text-decoration: underline;
+  }
+}
+
+.hero{
+  width: 100%;
+  height: 86%;
+  background: url("../assets/apple.jpg") center / cover no-repeat;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center 4%;
+  }
+}
+
+.hero .hero-con{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  color: #000;
+  padding: 30px;
+  /* border: 1px solid; */
+  height: 40%;
+  position: absolute;
+  top: 400px;
+  h2, h4{
+    color: #ffffff;
+    cursor: default;
+  }
+  h2{
+    font-size: 55px;
+  }
+  h4{
+    font-size: 25px;
+    font-weight: 300;
+  }
+  button{
+    padding: 12px 22px 12px 22px;
+    border-radius: 30px;
+    font-size: 17px;
+    word-spacing: 2px;
+    border: none;
+    cursor: pointer;
+  }
+}
